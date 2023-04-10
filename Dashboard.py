@@ -123,6 +123,7 @@ error_metrics2019 = generate_error_matrix(data_Y2019,y_pred_RF2019)
 
 # Create the app 
 app = JupyterDash(__name__, external_stylesheets=external_stylesheets) # create the dash app
+server = app.server
 
 app.layout = html.Div([
     html.H2('IST South Tower Electricity Consumption',style={"font-weight": "bold"}),
